@@ -1,0 +1,42 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.form-vehicle {
+  max-width: 1000px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-vehicle .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-vehicle .form-control:focus {
+  z-index: 2;
+}
+.form-vehicle input[type="model"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-vehicle input[type="brand"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-vehicle input[type="plate"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-vehicle input[type="identifier"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
