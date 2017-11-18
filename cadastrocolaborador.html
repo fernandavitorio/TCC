@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
 
     <title>Cadastro Colaborador</title>
 
@@ -14,41 +13,85 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/cadastrocolaborador.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li>
+                <a href="apontamentosiniciais.html">Apontamento de Atividades</a>
+            </li>
+            <li>
+                <a href="cadastrocolaborador.html">Cadastro de Colaborador</a>
+            </li>
+            <li>
+                <a href="cadastroveiculo.html">Cadastro de Veículo</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form class="form-employee">
+            <h2 class="form-employee-heading">Cadastro Colaborador</h2>
+
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-5">
+                    <input type="name" class="form-control" id="inputName" placeholder="Nome">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputRegistration" class="col-sm-2 col-form-label">Matrícula</label>
+                <div class="col-sm-5">
+                    <input type="registration" class="form-control" id="inputRegistration" placeholder="Matrícula">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="jobRole" class="col-sm-2 col-form-label">Cargo</label>
+                <div class="col-sm-5">
+                    <select class="form-control" id="jobRole">
+                        <option>Administrativo</option>
+                        <option>Motorista</option>
+                        <option>Coletor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">E-mail</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Senha</label>
+                <div class="col-sm-5">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-5">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
-    <h2 class="form-signin-heading">Colaborador</h2>
-
-    <form>
-        <div class="form-group">
-            <label for="inputName">Nome</label>
-            <input type="name" class="form-control" id="inputName">
-        </div>
-        <div class="form-group">
-            <label for="exampleSelect1">Cargo</label>
-            <select class="form-control" id="exampleSelect1">
-                <option>Motorista</option>
-                <option>Coletor</option>
-                <option>Administrativo</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="inputEmail">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
-        </div>
-        <div class="form-group">
-            <label for="inputPassword">Senha</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
-        </div>
-        <button type="submit" class="btn btn-primary">Salvar</button>
-    </form>
-
 </body>
 
 </html>

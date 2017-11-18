@@ -2,92 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Apontamentos iniciais</title>
+    <title>Apontamentos de Atividades</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/login.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/apontamentos.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <div class="container">
-
-<form class="form-apont">
-   <h2 class="form-apont-heading">Log-in</h2>
-    <div class="row">
-      <!-- panel preview -->
-      <div class="col-sm-5">
-        <div class="form-group">
-          <label for="status" class="col-sm-3 control-label">Setor</label>
-          <div class="col-sm-9">
-            <select class="form-control" id="status" name="status">
-              <option>1</option>
-              <option>2</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-           <label for="status" class="col-sm-3 control-label">Veículo</label>
-            <div class="col-sm-9">
-              <select class="form-control" id="status" name="status">
-                <option>1</option>
-                <option>2</option>
-              </select>
-        </div>
-
-        <div class="form-group">
-            <label for="status" class="col-sm-3 control-label">Coletor 1</label>
-             <div class="col-sm-9">
-               <select class="form-control" id="status" name="status">
-                 <option>1</option>
-                 <option>2</option>
-               </select>
-         </div>
-
-         <div class="form-group">
-            <label for="status" class="col-sm-3 control-label">Coletor 2</label>
-             <div class="col-sm-9">
-               <select class="form-control" id="status" name="status">
-                 <option>1</option>
-                 <option>2</option>
-               </select>
-         </div>
-
-         <div class="form-group">
-            <label for="status" class="col-sm-3 control-label">Coletor 3</label>
-             <div class="col-sm-9">
-               <select class="form-control" id="status" name="status">
-                 <option>1</option>
-                 <option>2</option>
-               </select>
-         </div>
-
-
-          </div>
-        </div>
-      </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <li>
+                <a href="apontamentosiniciais.html">Apontamento de Atividades</a>
+            </li>
+            <li>
+                <a href="cadastrocolaborador.html">Cadastro de Colaborador</a>
+            </li>
+            <li>
+                <a href="cadastroveiculo.html">Cadastro de Veículo</a>
+            </li>
+        </ul>
     </div>
 
-    <!--
-        <label for="inputEmail" class="sr-only">E-mail</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Acessar</button>
-      </form>-->
+    <div class="container">
+        <form class="form-pointing">
+            <h2 class="form-pointing-heading">Apontamentos de Atividades</h2>
+            <fieldset class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked> KM Inicial
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"> Horímetro Inicial
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option2"> Saída de Garagem
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option2"> Início de Coleta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios5" value="option2"> Fim de Coleta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios6" value="option2"> Início de Refeição
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios7" value="option2"> Fim de Refeição
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios8" value="option2"> Balança
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios9" value="option2"> Início de Descarga
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios10" value="option2"> Fim de Descarga
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios11" value="option2"> Ticket Balança
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios12" value="option2"> Peso Líquido
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios13" value="option2"> Horímetro Final
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios14" value="option2"> KM Final
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Atualizar Atividade</button>
+        </form>
 
-  </div>
-  <!-- /container -->
-
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
 </body>
-
-</html>
